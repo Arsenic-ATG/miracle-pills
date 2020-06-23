@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="miracle_pills" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-2W-dNK">
+                                <rect key="frame" x="154.66666666666666" y="52" width="104.99999999999997" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="FCj-0j-4O5"/>
+                                    <constraint firstAttribute="height" constant="101" id="hdD-Nc-5Sl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvf-KN-1Ql">
+                                <rect key="frame" x="123" y="161" width="168" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="BI6-bh-aog"/>
+                                    <constraint firstAttribute="height" constant="46" id="CTb-6p-vyK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="TNg-HY-Jce"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="168" id="V4G-xG-4xD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnW-rh-OsZ" userLabel="divider">
+                                <rect key="frame" x="40" y="262" width="334" height="1"/>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="A1A-B8-Mdc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-Hv-OrT">
+                                <rect key="frame" x="179" y="212" width="56" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="0zo-7N-dSS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="Dyz-dv-HIN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="bpu-XG-mYt"/>
+                                    <constraint firstAttribute="width" constant="56" id="gr0-Fw-JNk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VF4-Ok-LhQ">
+                                <rect key="frame" x="40" y="271" width="334" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kpq-ai-83u">
+                                <rect key="frame" x="40" y="299.33333333333331" width="334" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="kWW-6P-qnF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnW-rh-OsZ" secondAttribute="trailing" constant="20" id="03k-uz-HVU"/>
+                            <constraint firstItem="yvf-KN-1Ql" firstAttribute="top" secondItem="VNB-2W-dNK" secondAttribute="bottom" constant="8" id="12Q-Sw-AOx"/>
+                            <constraint firstItem="VNB-2W-dNK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2sP-mN-zOd"/>
+                            <constraint firstItem="yvf-KN-1Ql" firstAttribute="centerX" secondItem="VNB-2W-dNK" secondAttribute="centerX" id="4rj-ax-arN"/>
+                            <constraint firstItem="aPn-Hv-OrT" firstAttribute="top" secondItem="yvf-KN-1Ql" secondAttribute="bottom" constant="8" id="8SA-uS-tsw"/>
+                            <constraint firstItem="aPn-Hv-OrT" firstAttribute="top" secondItem="yvf-KN-1Ql" secondAttribute="bottom" constant="5" id="8pm-Vn-uIC"/>
+                            <constraint firstItem="yvf-KN-1Ql" firstAttribute="top" secondItem="VNB-2W-dNK" secondAttribute="bottom" constant="8" id="9VJ-0J-Og9"/>
+                            <constraint firstItem="cnW-rh-OsZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ALP-Fw-R3A"/>
+                            <constraint firstItem="yvf-KN-1Ql" firstAttribute="top" secondItem="VNB-2W-dNK" secondAttribute="bottom" constant="25" id="Fo0-NA-Dwa"/>
+                            <constraint firstItem="VF4-Ok-LhQ" firstAttribute="top" secondItem="cnW-rh-OsZ" secondAttribute="bottom" constant="8" id="HB1-Nb-8s5"/>
+                            <constraint firstItem="aPn-Hv-OrT" firstAttribute="top" secondItem="VNB-2W-dNK" secondAttribute="bottom" constant="1" id="NRT-0s-jue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnW-rh-OsZ" secondAttribute="trailing" constant="20" id="Tz1-Wq-ITW"/>
+                            <constraint firstItem="VF4-Ok-LhQ" firstAttribute="leading" secondItem="cnW-rh-OsZ" secondAttribute="leading" id="VJG-Vr-Ped"/>
+                            <constraint firstItem="cnW-rh-OsZ" firstAttribute="top" secondItem="aPn-Hv-OrT" secondAttribute="bottom" constant="7" id="bcN-kA-ZYs"/>
+                            <constraint firstItem="aPn-Hv-OrT" firstAttribute="centerX" secondItem="yvf-KN-1Ql" secondAttribute="centerX" id="eg6-Bx-HpJ"/>
+                            <constraint firstItem="Kpq-ai-83u" firstAttribute="top" secondItem="VF4-Ok-LhQ" secondAttribute="bottom" constant="8" id="fAg-IE-8k4"/>
+                            <constraint firstItem="VNB-2W-dNK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="k3V-1W-azp"/>
+                            <constraint firstItem="aPn-Hv-OrT" firstAttribute="top" secondItem="VNB-2W-dNK" secondAttribute="bottom" constant="8" id="mmj-JD-BTu"/>
+                            <constraint firstItem="VNB-2W-dNK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="usy-zF-aKQ"/>
+                            <constraint firstItem="Kpq-ai-83u" firstAttribute="trailing" secondItem="VF4-Ok-LhQ" secondAttribute="trailing" id="x8r-5d-wQF"/>
+                            <constraint firstItem="Kpq-ai-83u" firstAttribute="leading" secondItem="VF4-Ok-LhQ" secondAttribute="leading" id="xnl-hl-Ghy"/>
+                            <constraint firstItem="cnW-rh-OsZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="y3l-fH-pbH"/>
+                            <constraint firstItem="VF4-Ok-LhQ" firstAttribute="trailing" secondItem="cnW-rh-OsZ" secondAttribute="trailing" id="zO2-rF-mcv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="131.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miraclePillEmoji" width="90" height="90"/>
+    </resources>
 </document>
